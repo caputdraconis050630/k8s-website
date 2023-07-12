@@ -42,11 +42,7 @@ card:
    `kubectl` 체크섬 파일을 다운로드한다.
 
    ```powershell
-<<<<<<< HEAD
-   curl -LO "https://dl.k8s.io/v{{< skew currentPatchVersion >}}/bin/windows/amd64/kubectl.exe.sha256"
-=======
    curl.exe -LO "https://dl.k8s.io/{{< param "fullversion" >}}/bin/windows/amd64/kubectl.exe.sha256"
->>>>>>> e54c13c4a4 ([ko] Update outdated files in dev-1.26-ko.1 (M165-M173,M189-M196))
    ```
 
    `kubectl` 바이너리를 체크섬 파일을 통해 검증한다.
